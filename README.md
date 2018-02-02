@@ -1,9 +1,12 @@
 # Equinox DistoLogo applet
-Equinox oldschool demomaker effect: DistoLogo applet
+Equinox oldschool demomaker DistoLogo applet.
+
+See the following screenshot. On the applet, the rasters (horizontal coloured lines) are moving around the Equinox logo. The logo itself is shaking. And on the bottom, a small text line is scrolling.
 
 # screenshot
-[[https://github.com/fabbricius/EqxDistoLogo/blob/master/DistoLogo.png|alt=DistoLogo]]
+![DistoLogo](https://github.com/fabbricius/EqxDistoLogo/blob/master/DistoLogo.png)
 
+# what is it exactly?
 If you are old enough, you might remember the glorious days of demomakers in 90's. These people were developping, on their computers (mostly Atari ST and Amiga, but also Amstrad CPC and Commodore 64) small graphic programms called "demos" just to bluff the audience. They were gathering in parties, where they were showing their last productions.
 
 To know more about this: https://en.wikipedia.org/wiki/Demoscene or type demoscene on youtube to get an idea. The demoscene is still alive, now on PC, but new productions are still released on old computers.
