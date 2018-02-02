@@ -1,5 +1,8 @@
-# EqxDistoLogo
-Equinox Demomakers effects: DistoLogo applet
+# Equinox DistoLogo applet
+Equinox oldschool demomaker effect: DistoLogo applet
+
+# screenshot
+[[https://github.com/fabbricius/EqxDistoLogo/blob/master/DistoLogo.png|alt=DistoLogo]]
 
 If you are old enough, you might remember the glorious days of demomakers in 90's. These people were developping, on their computers (mostly Atari ST and Amiga, but also Amstrad CPC and Commodore 64) small graphic programms called "demos" just to bluff the audience. They were gathering in parties, where they were showing their last productions.
 
