@@ -46,19 +46,20 @@ public class DistoLogo extends Applet
 
     protected void shakeAndDrawLogo(Graphics g, int i)
     {
-        if(EquinoxruLez >= const600)
-            EquinoxruLez = 0;
+        if(shakeLogoCounter >= const600)
+	    shakeLogoCounter = 0; // end of the shake cycle
+
         for(int j = 0; j < largeurApplet * logoHeight; j++)
             logoTapeArray[j] = 0;
 
         for(int k = 0; k < logoHeight; k++)
         {
             for(int l = 0; l < logoWidth; l++)
-                logoTapeArray[k * largeurApplet + l + EquiNoxrulez[k + EquinoxruLez]] = logoArray[k * logoWidth + l];
+                logoTapeArray[k * largeurApplet + l + EquiNoxrulez[k + shakeLogoCounter]] = logoArray[k * logoWidth + l];
 
         }
 
-        EquinoxruLez++;
+        shakeLogoCounter++;
         memImageSrc.newPixels();
         g.drawImage(myImage, 0, i, null);
     }
@@ -133,7 +134,7 @@ public class DistoLogo extends Applet
         for(int j1 = 0; j1 < logoHeight; j1++)
             EquiNoxrulez[const600 + j1] = EquiNoxrulez[j1];
 
-        EquinoxruLez = 0;
+        shakeLogoCounter = 0;
         posRaster0 = 0;
         posRaster1 = 120;
         posRaster2 = 240;
@@ -172,7 +173,7 @@ public class DistoLogo extends Applet
 
     public void start()
     {
-        System.out.println("DEBUG: start() +");
+        //System.out.println("DEBUG: start() +");
 	if(fabThread == null)
         {
             fabThread = new Thread(this);
@@ -182,7 +183,7 @@ public class DistoLogo extends Applet
 
     public void stop()
     {
-                System.out.println("DEBUG: stop() +");
+        //System.out.println("DEBUG: stop() +");
 	if(fabThread != null)
         {
             fabThread.stop();
@@ -268,7 +269,7 @@ public class DistoLogo extends Applet
     int logoArray[]; // tableau taille logo 
     int logoTapeArray[]; // new int[largeurApplet * logoHeight]; 
     int EquiNoxrulez[]; // new int[const600 + logoHeight];
-    int EquinoxruLez;
+    int shakeLogoCounter;
     int posRaster0; // position starts at 0 (at the bottom)
     int posRaster1; // position starts at 120 (at the top of the Equinox logo but BEHIND)
     int posRaster2; // position starts at 240 (at the top of the Equinox logo but IN FRONT OF)
